@@ -1,6 +1,19 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Task Manager started");
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Task Manager");
+        System.out.println("1. Add task");
+        System.out.println("2. List tasks");
+        System.out.println("3. Exit");
+        System.out.println("Choose an option: ");
+
+        int choice = scanner.nextInt();
+        System.out.println("You chose: " + choice);
+
+        scanner.close();
     }
 
 }
